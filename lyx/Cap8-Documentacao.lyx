@@ -1,0 +1,879 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Documentação 
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Documentação"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter - Documentação} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todo projeto de engenharia precisa ser bem documentado.
+ Neste sentido, apresenta-se neste capítulo a documentação de uso do
+\shape italic
+ software
+\shape default
+ PropriedadesFisicas.
+ Esta documentação tem o formato de uma apostila que explica passo a passo
+ como usar o 
+\shape italic
+software
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Section
+Documentação do usuário
+\end_layout
+
+\begin_layout Standard
+Descreve-se aqui o manual do usuário, um guia que explica, passo a passo
+ a forma de instalação e uso do 
+\shape italic
+software
+\shape default
+ desenvolvido.
+\end_layout
+
+\begin_layout Subsection
+Como instalar o software
+\end_layout
+
+\begin_layout Standard
+Para instalar o 
+\shape italic
+software
+\shape default
+ execute o seguinte passo a passo:
+\end_layout
+
+\begin_layout Itemize
+Copie o diretório com os código para alguma pasta de destino;
+\end_layout
+
+\begin_layout Itemize
+Acesse essa pasta de destino com o terminal e realize compilação e
+\shape italic
+ linkagem.
+
+\shape default
+ Para isso é necessário que a máquina tenha algum compilador instalado (sugestão
+ 
+\shape italic
+g++
+\shape default
+).
+\end_layout
+
+\begin_layout Itemize
+O programa também pode ser aberto em algum ambiente para programação que
+ utilize linguagem em C++ (utilizada nesse código).
+\end_layout
+
+\begin_layout Subsection
+Como rodar o software
+\end_layout
+
+\begin_layout Standard
+Para rodar o
+\shape italic
+ software
+\shape default
+:
+\end_layout
+
+\begin_layout Itemize
+Executar o arquivo *.out ou *.exe no terminal (Comando LINUX: 
+\shape slanted
+./a.out
+\shape default
+ ou comando WINDOWS: 
+\shape slanted
+PropriedadesFisicas
+\shape default
+).
+\end_layout
+
+\begin_layout Itemize
+Ou pode ser rodado em alguem ambiente de programação.
+\end_layout
+
+\begin_layout Standard
+O programa é divido em quatro passos principais.
+ 
+\end_layout
+
+\begin_layout Standard
+O primeiro solicita o arquivo de entrada *.txt com os dados dos poros (Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Passo-1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/passo1.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Passo 1 do programa
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Passo-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Em seguida é solicitado o arquivo de conversão de unidades com extensão
+ *.txt (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Passo-2"
+
+\end_inset
+
+) para definir qual fator de conversão a ser utilizado.
+ Para isso também deve ser informado, no terceiro passo, a ampliação do
+ microscópio utilizada para capturar a imagem (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Passo-3"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/passo2.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Passo 2 do programa
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Passo-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/passo3.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Passo 3 do programa
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Passo-3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Caso essa ampliação não seja encontrada no banco de dados fornecido, será
+ perguntado ao usuário diretamente qual é o valor do fator de conversão
+ utilizado para aquela imagem (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Passo-3-4"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/passo3-4.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Passo extra caso o valor da ampliação esteja fora do banco de dados
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Passo-3-4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No quarto passo (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Passo-4"
+
+\end_inset
+
+), a informação sobre a porosidade da amostra será requerida a fim de calcular
+ a permeabilidade.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/passo4.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Passo 4 do programa
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Passo-4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por fim, a permeabilidade será informada na tela (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Passo-fim-k"
+
+\end_inset
+
+) e serão gerados 5 (cinco) arquivos de saída:
+\end_layout
+
+\begin_layout Itemize
+saída.dat: com todas informações utilizadas nas etapas de cálculo e todas
+ as variáveis calculadas.
+\end_layout
+
+\begin_layout Itemize
+raio_area.dat: com os vetores de raio e área acumulada e normalizada da imagem,
+ para gerar o gráfico vporoso_acumulado.png.
+\end_layout
+
+\begin_layout Itemize
+histograma.dat: com informações sobre a frequência de raio dos poros em determina
+dos intervalos especificados no arquivo, para gerar o gráfico frequencia_raio.png.
+\end_layout
+
+\begin_layout Itemize
+vporoso_acumulado.png: gráfico gerado de fração acumulativa do volume poroso
+ em porcentagem.
+\end_layout
+
+\begin_layout Itemize
+frequencia_raio.png: gráfico gerado de frequência de raio de poros.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/passo-fim.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Passo final da interação do software com o usuário informando valor de permeabil
+idade
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Passo-fim-k"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Veja no Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Teste"
+
+\end_inset
+
+ - Teste, exemplos de uso do 
+\shape italic
+software
+\shape default
+.
+\end_layout
+
+\begin_layout Section
+Documentação para desenvolvedor
+\end_layout
+
+\begin_layout Standard
+Apresenta-se nesta seção a documentação para o desenvolvedor, isto é, informaçõe
+s para usuários que queiram modificar, aperfeiçoar ou ampliar este 
+\shape italic
+software
+\shape default
+.
+\end_layout
+
+\begin_layout Subsection
+Dependências
+\end_layout
+
+\begin_layout Standard
+Para compilar o 
+\shape italic
+software
+\shape default
+ é necessário atender as seguintes dependências:
+\end_layout
+
+\begin_layout Itemize
+Instalar o compilador g++ da GNU disponível em 
+\begin_inset CommandInset href
+LatexCommand href
+name "http://gcc.gnu.org"
+target "http://gcc.gnu.org"
+
+\end_inset
+
+.
+ Para instalar no GNU/Linux use o comando 
+\family typewriter
+yum install gcc
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+Biblioteca CGnuplot; os arquivos para acesso a biblioteca CGnuplot devem
+ estar no diretório com os códigos do
+\shape italic
+ software
+\shape default
+;
+\end_layout
+
+\begin_layout Itemize
+O 
+\shape italic
+software
+\shape default
+ 
+\family typewriter
+gnuplot
+\family default
+, disponível no endereço 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://www.gnuplot.info/"
+
+\end_inset
+
+, deve estar instalado.
+ É possível que haja necessidade de setar o caminho para execução do 
+\family typewriter
+gnuplot
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Obter um arquivo com dados necessários explicado no Apêndice 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Título-do-Apêndice"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Necessário ter instalado 
+\shape italic
+software
+\shape default
+ que forneça informações de imagens petrofíscas.
+ 
+\shape italic
+Software
+\shape default
+ sugerido: ImageJ disponível para download em 
+\begin_inset CommandInset href
+LatexCommand href
+name "imagej.nih.gov/ij/"
+target "imagej.nih.gov/ij/"
+
+\end_inset
+
+ com macro JPor encontrado em 
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.geoanalysis.org/jPOR.html"
+target "http://www.geoanalysis.org/jPOR.html"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Documentação usando o software Doxygen
+\end_layout
+
+\begin_layout Standard
+A documentação do código do software também foi feita usando o software
+ 
+\family typewriter
+doxygen 
+\family default
+que gera a documentação do desenvolvedor no formato html.
+ Ele lê os arquivos com os códigos (*.h e *.cpp) e gera uma documentação muito
+ útil e de fácil navegação no formato html.
+ 
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:doxygen-classes"
+
+\end_inset
+
+ exibe a tela do doxygen que permite a listar as classes do programa.
+ Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:doxygen-arquivos"
+
+\end_inset
+
+ é apresentada a listagem dos arquivos que compõe o programa.
+ E na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:doxygen-vetor"
+
+\end_inset
+
+ é vista as informações de uma das classes do programa, CVetorAreaPerimetro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/doxygen-classes.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Documentação doxygen mostrando as classes do programa
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:doxygen-classes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/doxygen-files.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Documentação doxygen mostrando os arquivos do programa
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:doxygen-arquivos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/doxygen-CVetorAreaPerimetro.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Documentação doxygen mostrando informações da classe CVetorAreaPerimetro
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:doxygen-vetor"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

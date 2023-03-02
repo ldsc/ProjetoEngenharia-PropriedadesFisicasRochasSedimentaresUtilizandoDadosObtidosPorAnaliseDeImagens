@@ -1,0 +1,1020 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Teste
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Teste"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter - Teste} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todo projeto de engenharia passa por uma etapa de testes.
+ Neste capítulo apresentamos alguns testes do 
+\shape italic
+software
+\shape default
+ desenvolvido.
+ Estes testes devem dar resposta aos diagramas de caso de uso inicialmente
+ apresentados (diagramas de caso de uso geral e específicos).
+\end_layout
+
+\begin_layout Section
+Teste 1: Cálculo de permeabilidade e construção de gráficos
+\end_layout
+
+\begin_layout Standard
+Neste teste, será utilizado, como dados de entrada, o arquivo 
+\begin_inset Quotes eld
+\end_inset
+
+results.txt
+\begin_inset Quotes erd
+\end_inset
+
+ (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results-entrada"
+
+\end_inset
+
+) com os dados de área e perímetro dos poros (arquivo exportado do ImageJ)
+ e o arquivo 
+\begin_inset Quotes eld
+\end_inset
+
+conversao.txt
+\begin_inset Quotes erd
+\end_inset
+
+ (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:conversao"
+
+\end_inset
+
+) criado para obter dados de conversão de pixels para micrômetros que depende
+ do microscópio utilizado para extrair as imagens.
+\end_layout
+
+\begin_layout Standard
+Inicialmente será solicitado o arquivo de entrada, visto na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Passo-1"
+
+\end_inset
+
+, e o usuário digita o nome do *.txt de entrada.
+\end_layout
+
+\begin_layout Standard
+O programa irá preencher vetores com informações de área e perímetro de
+ cada poro.
+ Esses valores serão impressos no arquivo de 
+\begin_inset Quotes eld
+\end_inset
+
+saida.dat
+\begin_inset Quotes erd
+\end_inset
+
+ para inspeção do usuário, visto na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:saida-pixel"
+
+\end_inset
+
+.
+ Em seguida será solicitado o arquivo com as informações da conversão de
+ pixel para micrômetros utilizadas, como visto na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Passo-2"
+
+\end_inset
+
+.
+ Esses valores também serão escritos na saída (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:saida-conv"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/saida-area-per-pixel.jpg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parte arquivo 
+\begin_inset Quotes eld
+\end_inset
+
+saida.dat
+\begin_inset Quotes erd
+\end_inset
+
+ com as infomações de entrada
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:saida-pixel"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/conversao.jpg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquivo com dados de conversão de unidades
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:conversao"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/saida-amp-fat.jpg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parte arquivo 
+\begin_inset Quotes eld
+\end_inset
+
+saida.dat
+\begin_inset Quotes erd
+\end_inset
+
+ com as infomações de conversão de unidade
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:saida-conv"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O usuário será perguntado sobre a ampliação utilizada no microscópio para
+ captura da imagem (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Passo-3"
+
+\end_inset
+
+) e o fator de conversão correspondente será mostrado no arquivo de saída
+ (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:saida-fator-conv"
+
+\end_inset
+
+).
+ Dispondo desse, os vetores de área e perímetro serão convertidos para a
+ unidade de μm² e μm, respectivamente.
+ Os novos valores serão mostrados no arquivo de saída de maneira análoga
+ (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:saida-a-p-m"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/saida-fatorconv.jpg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fator de conversão de unidade
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:saida-fator-conv"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/saida-area-per-m.jpg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parte arquivo 
+\begin_inset Quotes eld
+\end_inset
+
+saida.dat
+\begin_inset Quotes erd
+\end_inset
+
+ com valores de área e perímetro convertidos
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:saida-a-p-m"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A soma total da área e perímetro será calculada para uso posterior.
+ Esses valores são expostos na saída criada (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:saida-somatorio"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/saida-soma.jpg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parte arquivo 
+\begin_inset Quotes eld
+\end_inset
+
+saida.dat
+\begin_inset Quotes erd
+\end_inset
+
+ com somatório dos vetores
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:saida-somatorio"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A seguir, a porosidade da imagem será solicitada (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Passo-4"
+
+\end_inset
+
+).
+ Com essas informações, a permeabilidade pode ser estimada.
+ Os valores calculados serão dispostos no arquivo de saída (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:saida-k"
+
+\end_inset
+
+) e o valor de permeabilidade escrito no escopo do programa também (Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Passo-fim-k"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/saida-k.jpg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parte arquivo 
+\begin_inset Quotes eld
+\end_inset
+
+saida.dat
+\begin_inset Quotes erd
+\end_inset
+
+ com valores das etapas e final da permeabilidade
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:saida-k"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para construir os gráficos é necessário um vetor com informação do raio
+ de cada poro.
+ Esse vetor é calculado a partir do vetor de área e mostrado no arquivo
+ de saída (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:saida-raio"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/saida-raio.jpg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parte arquivo 
+\begin_inset Quotes eld
+\end_inset
+
+saida.dat
+\begin_inset Quotes erd
+\end_inset
+
+ com os raios do poro
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:saida-raio"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dois arquivos são criados com informação necessária para elaborar os gráficos.
+ O 
+\begin_inset Quotes eld
+\end_inset
+
+raio_area.dat
+\begin_inset Quotes erd
+\end_inset
+
+ (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:raio_area"
+
+\end_inset
+
+) contém valores de raio e área acumulada e normalizada, que representam
+ o gráfico de volume poroso acumulado, observado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:graf-vol"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/raio_area.jpg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquivo 
+\begin_inset Quotes eld
+\end_inset
+
+raio_area.dat
+\begin_inset Quotes erd
+\end_inset
+
+ gerado
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:raio_area"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Documents/UENF/10periodo/POO-pratica/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/listagens/PropriedadesFisicas/vporoso_acumulado.png
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico de Fração acumulativa do volume poroso gerado pelo 
+\shape italic
+software
+\shape default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:graf-vol"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O outro é o 
+\begin_inset Quotes eld
+\end_inset
+
+histograma.dat
+\begin_inset Quotes erd
+\end_inset
+
+ (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:histograma"
+
+\end_inset
+
+), necessário para plotar a frequência de poros, visto na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:graf-freq"
+
+\end_inset
+
+.
+ Os gráficos são salvos no formato *.png pelo programa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/histograma.jpg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquivo 
+\begin_inset Quotes eld
+\end_inset
+
+histograma.dat
+\begin_inset Quotes erd
+\end_inset
+
+ gerado
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:histograma"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Documents/UENF/10periodo/POO-pratica/ModeloDocumento-ProjetoEngenharia-ProgramacaoPratica-master/listagens/PropriedadesFisicas/frequencia_raio.png
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico de Frequência do tamanho de poro gerado pelo 
+\shape italic
+software
+\shape default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:graf-freq"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Assim, o 
+\shape italic
+software
+\shape default
+ é finalizado.
+\end_layout
+
+\begin_layout Section
+Teste 2: Arquivo com dados de entrada não existente
+\end_layout
+
+\begin_layout Standard
+Quando o usuário entra com um nome de arquivo inexistente ou sem a extenção
+ do mesmo, o s
+\shape italic
+oftware
+\shape default
+ não encontra os dados de entrada e encerra o programa, como é visto na
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:falha"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/erro.bmp.jpg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Falha de acesso
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:falha"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

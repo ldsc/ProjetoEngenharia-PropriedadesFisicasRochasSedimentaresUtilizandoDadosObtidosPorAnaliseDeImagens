@@ -1,0 +1,7 @@
+Ampliacao	FatorConversao (micrometros/pixel)
+1.25	7.937
+2.5	4.082
+5	2.049
+10	1.027
+20	0.5107
+40	0.2548

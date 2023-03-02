@@ -1,0 +1,136 @@
+# depslib dependency file v1.0
+1453106670 source:c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\codigo\cgnuplot.cpp
+	<fstream>
+	<sstream>
+	<list>
+	<cstdio>
+	<cstdlib>
+	"CGnuplot.h"
+	<io.h>
+	<unistd.h>
+
+1453106670 c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\codigo\cgnuplot.h
+	<iostream>
+	<string>
+	<vector>
+	<stdexcept>
+	<cstdio>
+
+1496964485 source:c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\codigo\chistograma.cpp
+	"CHistograma.h"
+	"CGnuplot.h"
+	<iostream>
+	<string>
+
+1496947996 c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\codigo\chistograma.h
+	<iostream>
+	<fstream>
+	<vector>
+	<cmath>
+	"CVetorAreaPerimetro.h"
+	"CGnuplot.h"
+	"CPermeabilidade.h"
+
+1496925670 c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\codigo\cvetorareaperimetro.h
+	<vector>
+	<map>
+	<string>
+	<iostream>
+	<fstream>
+
+1496947986 c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\codigo\cpermeabilidade.h
+	<cmath>
+	<fstream>
+	<vector>
+	"CVetorAreaPerimetro.h"
+
+1496948570 source:c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\codigo\cpermeabilidade.cpp
+	"CPermeabilidade.h"
+	<iostream>
+
+1496948666 source:c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\codigo\cvetorareaperimetro.cpp
+	"CVetorAreaPerimetro.h"
+	<iostream>
+	<fstream>
+	<algorithm>
+	<iomanip>
+	<string>
+	<cmath>
+
+1498610882 source:c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\propriedadesfisicas\main.cpp
+	<iostream>
+	"CVetorAreaPerimetro.h"
+	"CPermeabilidadeKC.h"
+	"CHistograma.h"
+
+1498610622 c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\propriedadesfisicas\cvetorareaperimetro.h
+	<vector>
+	<map>
+	<string>
+	<iostream>
+	<fstream>
+	<cmath>
+
+1496972120 c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\propriedadesfisicas\cpermeabilidade.h
+	<cmath>
+	<fstream>
+	<vector>
+	"CVetorAreaPerimetro.h"
+
+1498610126 c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\propriedadesfisicas\chistograma.h
+	<iostream>
+	<fstream>
+	<vector>
+	<cmath>
+	"CVetorAreaPerimetro.h"
+	"CGnuplot.h"
+	"CPermeabilidadeKC.h"
+
+1453106670 c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\propriedadesfisicas\cgnuplot.h
+	<iostream>
+	<string>
+	<vector>
+	<stdexcept>
+	<cstdio>
+
+1453106670 source:c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\propriedadesfisicas\cgnuplot.cpp
+	<fstream>
+	<sstream>
+	<list>
+	<cstdio>
+	<cstdlib>
+	"CGnuplot.h"
+	<io.h>
+	<unistd.h>
+
+1498616181 source:c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\propriedadesfisicas\chistograma.cpp
+	"CHistograma.h"
+	"CGnuplot.h"
+	<iostream>
+	<string>
+	<iomanip>
+	<fstream>
+
+1497217002 source:c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\propriedadesfisicas\cpermeabilidade.cpp
+	"CPermeabilidade.h"
+	<iostream>
+
+1498610657 source:c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\propriedadesfisicas\cvetorareaperimetro.cpp
+	"CVetorAreaPerimetro.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+	<algorithm>
+	<string>
+	<cmath>
+
+1498610882 c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\propriedadesfisicas\cpermeabilidadekc.h
+	<cmath>
+	<fstream>
+	<vector>
+	"CVetorAreaPerimetro.h"
+
+1498610497 source:c:\users\usuario\documents\uenf\10periodo\poo-pratica\modelodocumento-projetoengenharia-programacaopratica-master\listagens\propriedadesfisicas\cpermeabilidadekc.cpp
+	"CPermeabilidadeKC.h"
+	<iostream>
+

@@ -1,0 +1,13 @@
+PropFis
+
+-importar arquivo do ImageJ
+-calcular superficie de poro especifica
+-calcular permeabilidade
+-plotar curva de distibuição de poros
+-plotar distribuição de poros acumulativa
+-apendice com tutorial para gerar arquivo do ImageJ (adicionar detalhe sobre TCC ter um tutorial completo)
+
+CHistograma p 185
+matriz 187 - CImagem
+
+-a conversão para microns pode ser a padrão (lenep) ou o usuario pode mudar (pedir dados via teclado)
