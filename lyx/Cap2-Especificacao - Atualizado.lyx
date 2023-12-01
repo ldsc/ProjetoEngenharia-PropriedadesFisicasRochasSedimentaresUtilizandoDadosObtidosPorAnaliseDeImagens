@@ -339,7 +339,7 @@ Analise Porosidade: Conduz análises de porosidade utilizando a técnica de
 \end_layout
 
 \begin_layout Standard
-Parametros Morfometricos: Configura e conduz análises morfométricas, extraindo
+Parametros Morfométricos: Configura e conduz análises morfométricas, extraindo
  dados como área e perímetro de poros, fundamentais para determinar a distribuiç
 ão de tamanho de poros e estimar a superfície de poro específica.
 \end_layout
@@ -2174,7 +2174,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename diagramas/Imagens/Diagrama Caso de Uso Geral.png
+	filename imagens/Diagrama Caso de Uso Geral.png
 	lyxscale 20
 	width 100text%
 
@@ -2248,7 +2248,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename diagramas/Imagens/Diagrama de Caso de Uso Específico.png
+	filename imagens/Diagrama de Caso de Uso Específico.png
 	lyxscale 20
 	width 100text%
 
