@@ -1,0 +1,665 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Capa
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE
+\begin_inset Newline newline
+\end_inset
+
+LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+O título deve ser o mais claro possível, não deixando dúvidas sobre o assunto
+ em questão.
+ O uso de vírgula ou dois pontos pode deixar o título com mais impacto.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+PROJETO ENGENHARIA
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+DESENVOLVIMENTO DO SOFTWARE
+\begin_inset Newline newline
+\end_inset
+
+DETERMINAÇÃO DE PROPRIEDADES FÍSICAS DE ROCHAS SEDIMENTARES UTILIZANDO DADOS
+ OBTIDOS POR ANÁLISE DE IMAGENS DIGITAIS
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+TRABALHO DA DISCIPLINA PROGRAMAÇÃO PRÁTICA 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Versão 1:
+\begin_inset Newline newline
+\end_inset
+
+JULIANA REZENDE ÁVILA
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Versão 2 (Atualizado):
+\begin_inset Newline newline
+\end_inset
+
+AUGUSTO CAIO ROTTE
+\end_layout
+
+\begin_layout Standard
+\align center
+FELLIP SILVEIRA DE ASSIS MATHIAS
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Prof.
+ André Duarte Bueno
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+o valor de 4cm pode ser alterado, para que a distribuição fique mais uniforme
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+MACAÉ - RJ
+\begin_inset Newline newline
+\end_inset
+
+Dezembro - 2023
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Chapter
+Introdução
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{Juliana Avila}
+\backslash
+rfoot{
+\backslash
+today}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Substitua "SeuNomeAqui" por seu nome e sobrenome
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Jamais retire o 
+\backslash
+today ele vai colocar data no material impresso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No presente projeto de engenharia desenvolve-se o 
+\shape italic
+software
+\shape default
+ aplicado a engenharia de petróleo que utiliza o paradigma da orientação
+ a objetos.
+ Ele realiza a determinação de propriedades físicas de rochas sedimentares
+ através de dados obtidos pela análise digital de imagens (ADI) utilizando
+ o software ImageJ.
+ Espera-se obter, utilizando valores de porosidade, curvas de distribuição
+ do tamanho de poros, estimativas da superfície de poro específica e valores
+ de permeabilidade das amostras de lâminas petrográficas das rochas.
+\end_layout
+
+\begin_layout Section
+Escopo do problema
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O estudo de rochas através de análise microscópia consiste na utilização
+ de amostras de testemunhos retirados de campo.
+ Essas são cortadas e preparadas como lâminas delgadas para posteriores
+ observações via microscópio ótico 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "art-Cunha"
+literal "true"
+
+\end_inset
+
+.
+ Quando o microscópio é conectado a um computador é possível capturar imagens
+ da lâmina em diferentes resoluções.
+ A partir dessas imagens, utilizando o 
+\shape italic
+software
+\shape default
+ gratuito ImageJ é possível extrair parâmetros de grande valia para caracterizar
+ a rocha 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "softwareImageJ"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Este conjunto de análises e simulações compõem um projeto de engenharia
+ que utiliza o paradigma da orientação a objetos.
+ 
+\end_layout
+
+\begin_layout Standard
+Seguem os dados usados no Projeto:
+\begin_inset VSpace 0.5cm
+\end_inset
+
+Analise Porosidade:
+\end_layout
+
+\begin_layout Standard
+Realiza a análise da porosidade em amostras de lâminas petrográficas de
+ rochas sedimentares, obtendo dados por meio da análise digital de imagens
+ com o software ImageJ.
+ Os resultados são utilizados para calcular a porosidade e contribuir para
+ a caracterização do reservatório.
+\begin_inset VSpace 0.5cm
+\end_inset
+
+ Parametros Morfometricos:
+\end_layout
+
+\begin_layout Standard
+Configura e conduz análises morfométricas nas imagens obtidas, extraindo
+ dados como área e perímetro de poros.
+ Esses parâmetros são fundamentais para a determinação da distribuição de
+ tamanho de poros e para estimar a superfície de poro específica.
+ 
+\begin_inset VSpace 0.5cm
+\end_inset
+
+Propriedades Rocha (homogeneidade e heterogeneidade):
+\end_layout
+
+\begin_layout Standard
+Realiza análises de homogeneidade e heterogeneidade das propriedades da
+ rocha.
+ Isso inclui características como cor, tamanho e tipo.
+ Os resultados dessas análises contribuem para um entendimento mais abrangente
+ da composição da rocha.
+ 
+\begin_inset VSpace 0.5cm
+\end_inset
+
+Metodo RbSr:
+\end_layout
+
+\begin_layout Standard
+Utiliza o método RbSr para análise isotópica de rochas, obtendo dados como
+ data de coleta, idade e relação isotópica.
+ Essas informações são cruciais para compreender a evolução geológica e
+ características específicas das amostras.
+ 
+\begin_inset VSpace 0.5cm
+\end_inset
+
+Volume Representativo do Elemento (REV):
+\end_layout
+
+\begin_layout Standard
+Identifica e caracteriza elementos representativos do volume da rocha, essenciai
+s para simulações futuras.
+ Essa análise contribui para a compreensão das propriedades macroscópicas
+ da rocha.
+ 
+\begin_inset VSpace 0.5cm
+\end_inset
+
+Simulacção Fluxo de Fluidos (liquido e gasoso):
+\end_layout
+
+\begin_layout Standard
+Configura e conduz simulações de fluxo de fluidos, tanto líquidos quanto
+ gasosos, utilizando as propriedades previamente analisadas.
+ As simulações incluem a configuração de viscosidade, temperatura, compressibili
+dade, entre outros parâmetros relevantes..
+ É de grande valia determinar essas características para realizar um bom
+ estudo do reservatório que se espera produzir.
+\begin_inset VSpace 0.5cm
+\end_inset
+
+Cálculo da Área do Vetor do Perímetro:
+\end_layout
+
+\begin_layout Standard
+Realiza correlações para encontrar a porosidade, a permeabilidade, a distribuiçã
+o de tamanho de poros na rocha e estimativa de superfície de poro específica.
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nesse 
+\shape italic
+software
+\shape default
+, os dados gerados no ImageJ serão processados e transformados em informações
+ importantes sobre a rocha analisada.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste projeto de engenharia são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desenvolver um software integrado para caracterização avançada de rochas
+ sedimentares: O objetivo principal do projeto é criar uma ferramenta de
+ software robusta e orientada a objetos capaz de conduzir análises aprofundadas
+ em amostras de rochas sedimentares.
+ O software visa integrar múltiplas classes e funcionalidades para fornecer
+ uma caracterização completa dos reservatórios.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Realizar análises de porosidade: Desenvolver métodos específicos para conduzir
+ análises de porosidade em amostras de lâminas petrográficas, utilizando
+ o software ImageJ como plataforma de análise digital de imagens.
+\end_layout
+
+\begin_layout Itemize
+Configurar e executar análises morfométricas para obtenção de parâmetros
+ essenciais: Desenvolver funcionalidades na classe Parametros Morfometricos
+ para configurar e conduzir análises morfométricas, extraindo dados cruciais
+ como área e perímetro de poros, fundamentais para a caracterização das
+ amostras.
+\end_layout
+
+\begin_layout Itemize
+Realizar análises de homogeneidade e heterogeneidade das propriedades da
+ rocha: Implementar métodos na classe Propriedades Rocha para realizar análises
+ detalhadas das características homogêneas e heterogêneas, contribuindo
+ para um entendimento mais abrangente da composição da rocha.
+\end_layout
+
+\begin_layout Itemize
+Utilizar o Método RbSr para análise isotópica de rochas: Desenvolver funcionalid
+ades na classe Metodo RbSr para configurar e conduzir análises isotópicas,
+ obtendo dados como data de coleta, idade e relação isotópica, essenciais
+ para compreender a evolução geológica das amostras.
+\end_layout
+
+\begin_layout Itemize
+Identificar e caracterizar elementos representativos para simulações futuras:
+ Implementar funcionalidades na classe Volume Representativo do Elemento
+ (REV) para identificar e caracterizar elementos representativos do volume
+ da rocha, contribuindo para simulações futuras.
+\end_layout
+
+\begin_layout Itemize
+Configurar e conduzir simulações de fluxo de fluidos (líquido e gasoso):
+ Desenvolver métodos na classe SimulacaoFluxoFluidos para configurar e conduzir
+ simulações de fluxo, utilizando as propriedades analisadas, como viscosidade,
+ temperatura e compressibilidade.
+\end_layout
+
+\begin_layout Itemize
+Realizar correlações para determinar porosidade, permeabilidade e distribuição
+ de tamanho de poros: Implementar funcionalidades na classe CVetorAreaPerimetro
+ para realizar correlações essenciais para determinar porosidade, permeabilidade
+ e distribuição de tamanho de poros nas rochas sedimentares.
+\end_layout
+
+\begin_layout Itemize
+Processar dados gerados no ImageJ e transformá-los em informações cruciais:
+ Integrar a classe CVetorAreaPerimetro ao fluxo de processamento do software,
+ garantindo que os dados gerados no ImageJ sejam processados e transformados
+ em informações valiosas sobre as rochas analisadas.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
