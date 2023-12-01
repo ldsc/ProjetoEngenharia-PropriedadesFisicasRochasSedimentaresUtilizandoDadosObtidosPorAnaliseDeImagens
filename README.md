@@ -30,23 +30,22 @@
 
 # Resumo e/ou informação extra:
 
--   Desenvolver um software que receba dados obtidos do ImageJ e converta-os em
-
-caracterização da rocha em análise.
+-   Desenvolver um software que receba dados obtidos do ImageJ e converta-os em caracterização da rocha em análise.
+- As novas atualizações foram a inclusão de classes como: Analise porosidade, Parametros Morfometricos, Propriedades rocha (homogeneidade e heterogeneidade), Metodo RbSr, Volume representativo do elemento (REV) e SimulacaoFluxoFluidos (liquido e gasoso).
 
 
 <a id="org8266a33"></a>
 
 # Versão:
 
--   1.0.
+-   2.0.
 
 
 <a id="org92e4b5b"></a>
 
 # Data:
 
--   2016/2 - segundo semestre.
+-   2023/2 - segundo semestre.
 
 
 <a id="org40cd6f1"></a>
@@ -61,6 +60,8 @@ caracterização da rocha em análise.
 # Lista dos Autores:
 
 -   JULIANA REZENDE ÁVILA
+-   AUGUSTO CAIO ROTTE
+-   FELLIP SILVEIRA DE ASSIS MATHIAS
 -   André Duarte Bueno <andreduartebueno@gmail.com>
 
 
@@ -78,6 +79,7 @@ caracterização da rocha em análise.
 # Vinculo com:
 
 -   Trabalho da disciplina de programação prática.
+-   Introdução a Projeto de Engenharia.
 
 
 <a id="org3112b73"></a>
