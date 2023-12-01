@@ -448,7 +448,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/ImagemJ.jpeg
-	lyxscale 80
+	lyxscale 50
 	width 100text%
 
 \end_inset
