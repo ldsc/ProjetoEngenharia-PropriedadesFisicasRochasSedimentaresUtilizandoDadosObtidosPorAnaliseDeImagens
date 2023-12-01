@@ -1,0 +1,702 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Elaboração}  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Elaboração
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Elaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Elaboração"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capítulo apresenta-se o estudo de conceitos relacionados ao sistema
+ a ser desenvolvido, a análise de domínio e a identificação de pacotes.
+\end_layout
+
+\begin_layout Section
+Análise de domínio
+\end_layout
+
+\begin_layout Standard
+A escolha do desenvolvimento desse 
+\shape italic
+software
+\shape default
+ teve como principal motivo otimizar estudos feitos de análise de imagens
+ com lâminas petrográficas.
+ Os resultados necessários para estudo eram trabalhosos e repetitivos, assim
+ demandavam um tempo que não é necessário.
+ Para diminuir o tempo de pesquisa da área de petrofísica da rochas esse
+ projeto foi elaborado.
+ 
+\end_layout
+
+\begin_layout Standard
+Após estudo dos requisitos/especificações do sistema, algumas entrevistas,
+ estudos na biblioteca e disciplinas do curso foi possível identificar o
+ domínio desse trabalho:
+\end_layout
+
+\begin_layout Itemize
+Caracterização de reservatórios;
+\end_layout
+
+\begin_layout Itemize
+Petrofísica fundamentada na física da rocha;
+\end_layout
+
+\begin_layout Itemize
+Análise digital de imagens de lâminas petrográficas com microscopia ótica;
+\end_layout
+
+\begin_layout Itemize
+Segmentação de imagens;
+\end_layout
+
+\begin_layout Itemize
+Estudo da permeabilidade e porosidade de amostras de lâminas petrográficas
+ de rochas sedimentares.
+\end_layout
+
+\begin_layout Section
+Formulação teórica
+\end_layout
+
+\begin_layout Standard
+A indústria de exploração de petróleo vem desenvolvendo diversas ferramentas
+ e técnicas que auxiliam na caracterização petrofísica de campos petrolíferos.
+ Essa caracterização consiste em determinar parâmetros de armazenamento
+ e escoamento do fluido.
+ Entre esses destacam-se a porosidade e a permeabilidade 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TiabDonaldson"
+literal "true"
+
+\end_inset
+
+.
+ Esses projetos visam à aproximação de um modelo de reservatório mais adequado
+ ao quadro real.
+ O estudo de rochas através de análise microscópica consiste na utilização
+ de lâminas extraídas de testemunhos retirados de campo, essas são cortadas
+ e preparadas para posteriores observações via microscópio ótico 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "art-Cunha"
+literal "true"
+
+\end_inset
+
+.
+ Na fase de preparação das lâminas, uma resina epóxi, de cor azulada, é
+ injetada na amostra delgada a vácuo, de modo a ocupar os poros da rocha.
+ Este procedimento faz com que seja ressaltado o espaço poroso ao ser observado
+ num microscópio ótico.
+ Quando esse tem acoplado uma câmera digital e é conectado a um computador,
+ é possível capturar imagens da lâmina em diferentes resoluções.Utilizando-se
+ 
+\shape italic
+softwares
+\shape default
+ de tratamento de imagens é possível extrair parâmetros de grande valia
+ para caracterizar a rocha.
+\end_layout
+
+\begin_layout Standard
+A análise digital de imagem (ADI) de lâminas petrográficas é uma técnica
+ que permite uma interpretação quantitativa do espaço poroso das rochas.
+ O procedimento básico consiste em binarizar a imagem nas cores preta e
+ branca, onde uma represente o espaço poroso e a outra o arcabouço, a matriz
+ e o cimento da rocha.
+\end_layout
+
+\begin_layout Standard
+Dentre diversas aplicações do 
+\shape italic
+software
+\shape default
+ de tratamento é possível extrair informações gerais sobre a imagem binarizada,
+ porosidade, ou mais específicas como área (
+\begin_inset Formula $A_{p}$
+\end_inset
+
+) e perímetro (
+\begin_inset Formula $L_{p}$
+\end_inset
+
+) de cada aglutinação individual de pixels pretos, ou seja de cada poro.
+ Com estas informações a superfície específica de poros (
+\begin_inset Formula $S_{pv}$
+\end_inset
+
+) e a superfície específica por volume do grão (
+\begin_inset Formula $S_{vgr}$
+\end_inset
+
+) podem ser determinadas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TiabDonaldson"
+literal "true"
+
+\end_inset
+
+.
+ E por fim, a permeabilidade pode ser estimada utilizando o modelo de Kozeny-Car
+man (
+\begin_inset Formula $k_{kc}$
+\end_inset
+
+) visto que os valores de porosidade (
+\begin_inset Formula $\phi$
+\end_inset
+
+) são determinados pelo 
+\shape italic
+software
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{pv}=\frac{4L_{p}}{\pi A_{p}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{vgr}=S_{pv}\left(\frac{\phi}{1-\phi}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+k_{kc}=\left(\frac{1}{5S_{vgr}^{2}}\right)\left(\frac{\phi^{3}}{\left(1-\phi\right)^{2}}\right)\label{eq:KC}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Além disso, através do valor da área de cada poro reconhecido, pelo ImageJ,
+ e adotando os poros com uma geometria circular é possível obter uma aproximação
+do diâmetro dos poros (
+\begin_inset Formula $d$
+\end_inset
+
+), e assim uma distribuição do tamanho dos poros.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+d=2\sqrt{\frac{A_{p}}{\pi}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para os demais módulos do software, como Análise de Porosidade, Parâmetros
+ Morfométricos, Propriedades da Rocha (Homogeneidade e Heterogeneidade),
+ Método RbSr, Volume Representativo do Elemento (REV) e Simulação de Fluxo
+ de Fluidos (Líquidos e Gasosos), serão aplicadas técnicas e análises específica
+s para atingir os objetivos propostos em cada módulo, proporcionando uma
+ abordagem holística na caracterização de rochas sedimentares.
+\end_layout
+
+\begin_layout Standard
+Para o módulo de Análise de Porosidade, a abordagem se concentra na utilização
+ de técnicas avançadas de análise digital de imagens, visando extrair informaçõe
+s precisas sobre a porosidade das amostras de lâminas petrográficas.
+ Isso inclui a determinação da distribuição de tamanho de poros, permitindo
+ uma caracterização mais detalhada dos espaços vazios na rocha.
+\end_layout
+
+\begin_layout Standard
+No módulo de Parâmetros Morfométricos, a ênfase está na análise detalhada
+ da forma e geometria dos poros.
+ A obtenção de dados como área e perímetro de cada poro permite a avaliação
+ da morfologia das amostras, contribuindo para uma compreensão mais profunda
+ da estrutura da rocha.
+\end_layout
+
+\begin_layout Standard
+O módulo de Propriedades da Rocha (Homogeneidade e Heterogeneidade) realiza
+ análises específicas para avaliar a uniformidade e variação nas características
+ físicas das rochas.
+ A distinção entre homogeneidade e heterogeneidade proporciona insights
+ valiosos para a compreensão da diversidade na composição das amostras.
+\end_layout
+
+\begin_layout Standard
+No Método RbSr, a análise isotópica desempenha um papel crucial na determinação
+ da idade e na relação isotópica das rochas.
+ Essas informações são essenciais para reconstruir a história geológica
+ das amostras, fornecendo dados valiosos para estudos de evolução temporal.
+\end_layout
+
+\begin_layout Standard
+O módulo de Volume Representativo do Elemento (REV) identifica e caracteriza
+ elementos representativos do volume da rocha, contribuindo para uma compreensão
+ mais abrangente das propriedades macroscópicas.
+ Essa análise é vital para garantir que as simulações subsequentes se aproximem
+ da realidade do reservatório.
+\end_layout
+
+\begin_layout Standard
+Para o módulo de Simulação de Fluxo de Fluidos (Líquidos e Gasosos), as
+ técnicas envolvem a configuração de parâmetros como viscosidade, temperatura
+ e compressibilidade, permitindo simulações precisas do comportamento dos
+ fluidos nas amostras analisadas.
+ Essas simulações são cruciais para predizer o desempenho do reservatório
+ em condições diversas.
+\end_layout
+
+\begin_layout Standard
+Em conjunto, esses módulos abrangem uma abordagem holística na caracterização
+ de rochas sedimentares, oferecendo uma gama completa de análises, desde
+ a escala microscópica até a macroscópica, para atender às demandas da indústria
+ de exploração de petróleo.
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Exemplo-do-imagej-txt"
+
+\end_inset
+
+ é visto o arquivo de saída do 
+\shape italic
+software
+\shape default
+ que será usado como dado de entrada do projeto aqui desenvolvido.
+ Nele contém informações de área e perímetro de cada poro da imagem binarizada
+ em unidade de
+\shape italic
+ pixel
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/ImagemJ.jpeg
+	lyxscale 40
+	width 100text%
+	height 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo do arquivo exportado pelo ImageJ (formato ASCII e extensão .txt)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Exemplo-do-imagej-txt"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Assim é possível plotar gráficos de histograma de frequência de raio de
+ poros e da distribuição acumulativa do volume poroso (%) em função do raio
+ de poro para realizar uma análise mais completa da rocha.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+O software utilizado para a análise das imagens foi o ImageJ na versão Fiji,
+ o qual está disponível gratuitamente em http://fiji.sc.
+ Além disto também foi utilizado o plug-in jPor (Grove & Jerram, 2011),
+ para as análises de porosidade.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Identificação de pacotes – assuntos
+\end_layout
+
+\begin_layout Description
+CVetorPerimetro: 
+\end_layout
+
+\begin_layout Itemize
+Correlações para determinar porosidade, permeabilidade e distribuição de
+ tamanho de poros.
+ 
+\end_layout
+
+\begin_layout Itemize
+Utiliza dados da análise digital de imagens (ADI) com o software ImageJ.
+ 
+\end_layout
+
+\begin_layout Itemize
+Processa informações cruciais para caracterização do reservatório.
+\end_layout
+
+\begin_layout Description
+AnalisePorosidade:
+\end_layout
+
+\begin_layout Itemize
+Análise específica da porosidade em lâminas petrográficas.
+\end_layout
+
+\begin_layout Itemize
+Utiliza dados provenientes da ADI com o ImageJ.
+\end_layout
+
+\begin_layout Itemize
+Contribui para determinação da porosidade e caracterização do reservatório.
+\end_layout
+
+\begin_layout Description
+ParametrosMorfometricos:
+\end_layout
+
+\begin_layout Itemize
+Configura e conduz análises morfométricas em imagens de lâminas petrográficas.
+\end_layout
+
+\begin_layout Itemize
+Extrai dados como área e perímetro de poros.
+ 
+\end_layout
+
+\begin_layout Itemize
+Fundamentais para determinar distribuição de tamanho de poros e estimar
+ superfície de poro específica.
+ 
+\end_layout
+
+\begin_layout Description
+PropriedadesRocha(Homogeneidade/Heterogeneidade):
+\end_layout
+
+\begin_layout Itemize
+Realiza análises de homogeneidade e heterogeneidade.
+ 
+\end_layout
+
+\begin_layout Itemize
+Inclui características como cor, tamanho e tipo.
+ 
+\end_layout
+
+\begin_layout Itemize
+Contribui para entendimento abrangente da composição da rocha.
+ 
+\end_layout
+
+\begin_layout Description
+Metodo-RbSr:
+\end_layout
+
+\begin_layout Itemize
+Utiliza método RbSr para análise isotópica de rochas.
+ 
+\end_layout
+
+\begin_layout Itemize
+Obtém dados como data de coleta, idade e relação isotópica.
+ 
+\end_layout
+
+\begin_layout Itemize
+Crucial para compreensão da evolução geológica e características das amostras.
+ 
+\end_layout
+
+\begin_layout Description
+VolumeRepresentativoElemento(REV):
+\end_layout
+
+\begin_layout Itemize
+Identifica e caracteriza elementos representativos do volume da rocha.
+ 
+\end_layout
+
+\begin_layout Itemize
+Essencial para simulações futuras.
+ 
+\end_layout
+
+\begin_layout Itemize
+Contribui para compreensão das propriedades macroscópicas da rocha.
+ 
+\end_layout
+
+\begin_layout Description
+SimulacaoFluxoFluidos(Líquido/Gasoso):
+\end_layout
+
+\begin_layout Itemize
+Configura e conduz simulações de fluxo de fluidos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Abrange líquidos e gasosos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Utiliza propriedades previamente analisadas.
+ 
+\end_layout
+
+\begin_layout Itemize
+Contribui para compreensão do comportamento dos fluidos em diferentes cenários.
+\end_layout
+
+\begin_layout Section
+Diagrama de pacotes – assuntos
+\end_layout
+
+\begin_layout Standard
+A representação dos pacotes se encontra na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Diagrama de Pacotes - Assuntos.png
+	lyxscale 15
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Pacotes
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
