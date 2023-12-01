@@ -183,7 +183,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Downloads/DIAGRAMAS UMBRELLO - Projeto de Engenharia 2023-2/Imagens PNG/class diagram.png
+	filename imagens/class diagram.png
 	lyxscale 15
 	width 100text%
 
@@ -529,7 +529,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Downloads/DIAGRAMAS UMBRELLO - Projeto de Engenharia 2023-2/Imagens PNG/Diagrama de Sequencia.png
+	filename imagens/Diagrama de Sequencia.png
 	lyxscale 15
 	width 100text%
 
@@ -590,7 +590,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Downloads/DIAGRAMAS UMBRELLO - Projeto de Engenharia 2023-2/Imagens PNG/Diagrama de Sequencia Especifico.png
+	filename imagens/Diagrama de Sequencia Especifico.png
 	lyxscale 15
 	width 100text%
 
@@ -697,7 +697,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Downloads/DIAGRAMAS UMBRELLO - Projeto de Engenharia 2023-2/Imagens PNG/Diagrama de Comunicação.png
+	filename imagens/Diagrama de Comunicação.png
 	lyxscale 15
 	width 100text%
 
@@ -790,7 +790,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Downloads/DIAGRAMAS UMBRELLO - Projeto de Engenharia 2023-2/Imagens PNG/Maquina de Estado.png
+	filename imagens/Maquina de Estado.png
 	lyxscale 20
 	width 100text%
 
@@ -849,7 +849,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Downloads/DIAGRAMAS UMBRELLO - Projeto de Engenharia 2023-2/Imagens PNG/Diagrama de Atividades.png
+	filename imagens/Diagrama de Atividades.png
 	lyxscale 15
 	width 100text%
 

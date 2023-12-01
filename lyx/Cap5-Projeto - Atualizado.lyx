@@ -582,7 +582,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Downloads/DIAGRAMAS UMBRELLO - Projeto de Engenharia 2023-2/Imagens PNG/Diagrama de Componentes.png
+	filename imagens/Diagrama de Componentes.png
 	lyxscale 15
 	width 100text%
 
@@ -666,7 +666,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Downloads/DIAGRAMAS UMBRELLO - Projeto de Engenharia 2023-2/Imagens PNG/deployment diagram.png
+	filename imagens/deployment diagram.png
 	lyxscale 25
 	width 100text%
 

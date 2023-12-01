@@ -447,7 +447,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Downloads/DIAGRAMAS UMBRELLO - Projeto de Engenharia 2023-2/Imagens PNG/ImagemJ.jpeg
+	filename imagens/ImagemJ.jpeg
 	lyxscale 80
 	width 100text%
 
@@ -664,7 +664,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/Downloads/DIAGRAMAS UMBRELLO - Projeto de Engenharia 2023-2/Imagens PNG/Diagrama de Pacotes - Assuntos.png
+	filename imagens/Diagrama de Pacotes - Assuntos.png
 	lyxscale 15
 	width 100text%
 
