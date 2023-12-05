@@ -183,7 +183,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Diagrama de Classe.png
+	filename imagens/class diagram.png
 	lyxscale 15
 	width 100text%
 
@@ -240,7 +240,7 @@ CVetorPerimetro: Módulo responsável por realizar correlações para determinar
 \end_layout
 
 \begin_layout Itemize
-Atributos: are: <int> = 0, perimetro: vetor<double> = 0.0, porosidade: double
+Atributos: area: <int> = 0, perimetro: vetor<double> = 0.0, porosidade: double
  = 0.0
 \end_layout
 

@@ -399,18 +399,18 @@ today ele vai colocar data no material impresso
 \end_layout
 
 \begin_layout Standard
-No presente projeto de engenharia desenvolve-se o 
-\shape italic
-software
-\shape default
- aplicado a engenharia de petróleo que utiliza o paradigma da orientação
- a objetos.
- Ele realiza a determinação de propriedades físicas de rochas sedimentares
- através de dados obtidos pela análise digital de imagens (ADI) utilizando
- o software ImageJ.
- Espera-se obter, utilizando valores de porosidade, curvas de distribuição
- do tamanho de poros, estimativas da superfície de poro específica e valores
- de permeabilidade das amostras de lâminas petrográficas das rochas.
+Este projeto de engenharia desenvolve um software orientado a objetos para
+ a análise de propriedades físicas de rochas sedimentares.
+ Utilizando a análise digital de imagens (ADI) com o software ImageJ, o
+ sistema busca por porosidade, distribuição de tamanho de poros e permeabilidade
+ em lâminas petrográficas.
+ Além disso, incorpora módulos específicos para a análise de porosidade,
+ parâmetros morfométricos, propriedades da rocha, método RbSr, volume representa
+tivo do elemento (REV), simulação de fluxo de fluidos (líquido e gasoso)
+ e o cálculo do vetor área do perímetro.
+ Essas funcionalidades abrangem desde análises quantitativas até simulações
+ complexas, proporcionando uma abordagem holística na caracterização de
+ rochas sedimentares na indústria de exploração de petróleo.
 \end_layout
 
 \begin_layout Section
@@ -463,10 +463,10 @@ Este conjunto de análises e simulações compõem um projeto de engenharia
 
 \begin_layout Standard
 Seguem os dados usados no Projeto:
-\begin_inset VSpace 0.5cm
-\end_inset
+\end_layout
 
-Analise Porosidade:
+\begin_layout Standard
+Análise Porosidade:
 \end_layout
 
 \begin_layout Standard
@@ -475,10 +475,11 @@ Realiza a análise da porosidade em amostras de lâminas petrográficas de
  com o software ImageJ.
  Os resultados são utilizados para calcular a porosidade e contribuir para
  a caracterização do reservatório.
-\begin_inset VSpace 0.5cm
-\end_inset
+ 
+\end_layout
 
- Parametros Morfometricos:
+\begin_layout Standard
+Parâmetros Morfometricos:
 \end_layout
 
 \begin_layout Standard
@@ -487,10 +488,10 @@ Configura e conduz análises morfométricas nas imagens obtidas, extraindo
  Esses parâmetros são fundamentais para a determinação da distribuição de
  tamanho de poros e para estimar a superfície de poro específica.
  
-\begin_inset VSpace 0.5cm
-\end_inset
+\end_layout
 
-Propriedades Rocha (homogeneidade e heterogeneidade):
+\begin_layout Standard
+Propriedades da Rocha (homogeneidade e heterogeneidade):
 \end_layout
 
 \begin_layout Standard
@@ -500,10 +501,10 @@ Realiza análises de homogeneidade e heterogeneidade das propriedades da
  Os resultados dessas análises contribuem para um entendimento mais abrangente
  da composição da rocha.
  
-\begin_inset VSpace 0.5cm
-\end_inset
+\end_layout
 
-Metodo RbSr:
+\begin_layout Standard
+Método RbSr:
 \end_layout
 
 \begin_layout Standard
@@ -512,9 +513,9 @@ Utiliza o método RbSr para análise isotópica de rochas, obtendo dados como
  Essas informações são cruciais para compreender a evolução geológica e
  características específicas das amostras.
  
-\begin_inset VSpace 0.5cm
-\end_inset
+\end_layout
 
+\begin_layout Standard
 Volume Representativo do Elemento (REV):
 \end_layout
 
@@ -524,10 +525,10 @@ s para simulações futuras.
  Essa análise contribui para a compreensão das propriedades macroscópicas
  da rocha.
  
-\begin_inset VSpace 0.5cm
-\end_inset
+\end_layout
 
-Simulacção Fluxo de Fluidos (liquido e gasoso):
+\begin_layout Standard
+Simulação de Fluxo de Fluidos (liquido e gasoso):
 \end_layout
 
 \begin_layout Standard
@@ -537,19 +538,15 @@ Configura e conduz simulações de fluxo de fluidos, tanto líquidos quanto
 dade, entre outros parâmetros relevantes..
  É de grande valia determinar essas características para realizar um bom
  estudo do reservatório que se espera produzir.
-\begin_inset VSpace 0.5cm
-\end_inset
+\end_layout
 
+\begin_layout Standard
 Cálculo da Área do Vetor do Perímetro:
 \end_layout
 
 \begin_layout Standard
 Realiza correlações para encontrar a porosidade, a permeabilidade, a distribuiçã
 o de tamanho de poros na rocha e estimativa de superfície de poro específica.
-\begin_inset VSpace 0.5cm
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard

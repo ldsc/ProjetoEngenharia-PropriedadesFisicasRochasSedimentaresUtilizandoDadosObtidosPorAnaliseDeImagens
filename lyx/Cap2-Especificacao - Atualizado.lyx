@@ -127,7 +127,7 @@ space - Especificação}
 \end_layout
 
 \begin_layout Chapter
-Especificção
+Especificação
 \begin_inset Index idx
 status collapsed
 
@@ -254,9 +254,9 @@ Componentes principais
 \begin_inset Text
 
 \begin_layout Plain Layout
-Determinação de propriedades físicas de rochas sedimentaresa partir de dados
- área do períemtro, fluxo de fluidos, método RbSr, propiedades da rocha,
- porosidade, volume representativo do elemento e parâmetros morfométricos
+Determinação de propriedades físicas de rochas sedimentares a partir de
+ dados área do perímetro, fluxo de fluidos, método RbSr, propriedades da
+ rocha, porosidade, volume representativo do elemento e parâmetros morfométricos
  obtidos por análise de imagens digitais pelo 
 \shape slanted
 software
@@ -339,7 +339,7 @@ Analise Porosidade: Conduz análises de porosidade utilizando a técnica de
 \end_layout
 
 \begin_layout Standard
-Parametros Morfométricos: Configura e conduz análises morfométricas, extraindo
+Parâmetros Morfométricos: Configura e conduz análises morfométricas, extraindo
  dados como área e perímetro de poros, fundamentais para determinar a distribuiç
 ão de tamanho de poros e estimar a superfície de poro específica.
 \end_layout
@@ -363,7 +363,7 @@ Volume Representativo do Elemento (REV): Identifica e caracteriza elementos
 \end_layout
 
 \begin_layout Standard
-SimulacaoFluxoFluidos (liquido e gasoso): Configura e conduz simulações
+Simulação de Fluxo de Fluídos (líquido e gasoso): Configura e conduz simulações
  de fluxo de fluidos, utilizando propriedades previamente analisadas, incluindo
  viscosidade, temperatura e compressibilidade.
  
@@ -1524,8 +1524,7 @@ RNF-13
 \begin_inset Text
 
 \begin_layout Plain Layout
-O software deve ser projetado para otimizar o consumo de recursos computacionais
-, contribuindo para uma pegada ambiental reduzida durante sua execução.
+O software deve ser projetado para otimizar o consumo de recursos computacionais.
 \end_layout
 
 \end_inset
@@ -1857,11 +1856,6 @@ Cenários alternativos:
  Se os resultados não forem satisfatórios, o usuário pode ajustar parâmetros.
 \end_layout
 
-\begin_layout Plain Layout
-7.
- Se os resultados não forem satisfatórios, o usuário pode ajustar parâmetros.
-\end_layout
-
 \end_inset
 </cell>
 </row>
@@ -1973,91 +1967,47 @@ Etapas:
 
 \begin_layout Plain Layout
 1.
- Selecionar amostra para análise.
+ O usuário inicia o software e acessa o módulo específico para a determinação
+ de propriedades físicas.
+ 
 \end_layout
 
 \begin_layout Plain Layout
 2.
- Configurar parâmetros de análise.
+ O sistema solicita a seleção da amostra de lâmina petrográfica para análise.
 \end_layout
 
 \begin_layout Plain Layout
 3.
- Executar análise de porosidade.
+ O usuário carrega a imagem da lâmina no software ImageJ por meio da interface
+ do sistema.
+ 
 \end_layout
 
 \begin_layout Plain Layout
 4.
- Selecionar amostra para análise morfométrica.
+ O sistema realiza a análise digital da imagem, identificando poros e aglutinaçõ
+es na matriz da rocha.
+ 
 \end_layout
 
 \begin_layout Plain Layout
 5.
- Configurar parâmetros de análise.
+ Os parâmetros de interesse, como área e perímetro de cada poro, são extraídos
+ pela ferramenta ImageJ.
+ 
 \end_layout
 
 \begin_layout Plain Layout
 6.
- Executar análise morfométrica.
+ Utilizando os dados obtidos, o sistema calcula a porosidade, distribuição
+ do tamanho de poros, superfície de poro específica e permeabilidade.
 \end_layout
 
 \begin_layout Plain Layout
-7.Selecionar amostra para análise de propriedades.
-\end_layout
-
-\begin_layout Plain Layout
-8.
- Executar análise de homogeneidade.
-\end_layout
-
-\begin_layout Plain Layout
-9.
- Executar análise de heterogeneidade.
-\end_layout
-
-\begin_layout Plain Layout
-10.
- Selecionar amostra para análise isotópica.
-\end_layout
-
-\begin_layout Plain Layout
-11.
- Configurar parâmetros do método RbSr.
-\end_layout
-
-\begin_layout Plain Layout
-12.
- Executar análise isotópica.
-\end_layout
-
-\begin_layout Plain Layout
-13.
- Identificar elementos representativos.
-\end_layout
-
-\begin_layout Plain Layout
-14.
- Caracterizar elementos identificados.
-\end_layout
-
-\begin_layout Plain Layout
-15.
- Configurar parâmetros da simulação.
-\end_layout
-
-\begin_layout Plain Layout
-16.
- Executar simulação de fluxo líquido.
-\end_layout
-
-\begin_layout Plain Layout
-17.
- Configurar parâmetros da simulação.
-\end_layout
-
-\begin_layout Plain Layout
-18.
- Executar simulação de fluxo gasoso.
+7.
+ Os resultados são apresentados ao usuário, incluindo gráficos e métricas
+ específicas das propriedades da amostra.
 \end_layout
 
 \end_inset
@@ -2078,35 +2028,15 @@ Cenários alternativos:
 
 \begin_layout Plain Layout
 1.
- Se a amostra não estiver adequada para análise, o sistema notifica o usuário.
+ Se a imagem da lâmina não for carregada corretamente, o sistema emite uma
+ mensagem de erro e orienta sobre os formatos suportados.
 \end_layout
 
 \begin_layout Plain Layout
 2.
- Se os parâmetros de análise não forem adequados, o usuário pode ajustá-los.
-\end_layout
-
-\begin_layout Plain Layout
-3.
- Se a análise não for conclusiva, o usuário pode repetir a análise ou verificar
- outras propriedades.
-\end_layout
-
-\begin_layout Plain Layout
-4.
- Se os resultados não forem satisfatórios, o usuário pode revisar os parâmetros
- ou escolher outra amostra.
-\end_layout
-
-\begin_layout Plain Layout
-5.
- Se a identificação não for precisa, o usuário pode ajustar critérios de
- seleção.
-\end_layout
-
-\begin_layout Plain Layout
-6.
- Se os resultados não forem satisfatórios, o usuário pode ajustar parâmetros.
+ Caso a análise digital não for concluída com sucesso, o sistema fornece
+ sugestões para otimizar a qualidade da imagem ou ajustar parâmetros de
+ análise.
 \end_layout
 
 \end_inset
