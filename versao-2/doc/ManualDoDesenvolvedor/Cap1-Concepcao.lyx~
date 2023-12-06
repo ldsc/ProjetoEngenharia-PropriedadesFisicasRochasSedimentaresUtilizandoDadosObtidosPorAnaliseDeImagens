@@ -2171,7 +2171,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeCasoDeUsoEspecífico.png
+	filename imagens/Diagrama de Caso de Uso Específico.png
+	lyxscale 20
 	width 100text%
 
 \end_inset

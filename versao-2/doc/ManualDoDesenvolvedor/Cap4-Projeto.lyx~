@@ -582,7 +582,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeComponentes.png
+	filename imagens/Diagrama de Componentes.png
+	lyxscale 15
 	width 100text%
 
 \end_inset
@@ -665,7 +666,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeImplantacao.png
+	filename imagens/deployment diagram.png
+	lyxscale 25
 	width 100text%
 
 \end_inset

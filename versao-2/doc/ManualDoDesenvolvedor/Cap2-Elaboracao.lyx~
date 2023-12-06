@@ -448,6 +448,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/ImagemJ.jpeg
+	lyxscale 40
 	width 100text%
 	height 15cm
 
@@ -664,7 +665,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDePacotesAssuntos.png
+	filename imagens/Diagrama de Pacotes - Assuntos.png
+	lyxscale 15
 	width 100text%
 
 \end_inset
