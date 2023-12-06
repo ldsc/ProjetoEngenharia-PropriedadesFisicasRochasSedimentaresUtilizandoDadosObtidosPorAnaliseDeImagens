@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XMI verified="false" xmi.version="1.2" timestamp="2023-12-06T14:34:11" xmlns:UML="http://schema.omg.org/spec/UML/1.4">
+<XMI verified="false" xmi.version="1.2" timestamp="2023-12-06T15:59:01" xmlns:UML="http://schema.omg.org/spec/UML/1.4">
  <XMI.header>
   <XMI.documentation>
    <XMI.exporter>umbrello uml modeller http://umbrello.kde.org</XMI.exporter>
@@ -39,7 +39,7 @@
      </UML:Namespace.ownedElement>
      <XMI.extension xmi.extender="umbrello">
       <diagrams resolution="96">
-       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="0" showpackage="1" showpubliconly="0" showstereotype="1" name="class diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="0" canvaswidth="0" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#d3d3d3" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="uepWVye7xCQq2" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
+       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="1" showpackage="1" showpubliconly="0" showstereotype="1" name="class diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="0" canvaswidth="0" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#d3d3d3" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="uepWVye7xCQq2" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
         <widgets/>
         <messages/>
         <associations/>
@@ -78,7 +78,7 @@
       <UML:Dependency visibility="public" isSpecification="false" namespace="Use_Case_View" supplier="uikNkGpnSaG6d" xmi.id="uxN9ErF5uRjxn" client="u4j0NTUU15ffh" name=""/>
       <UML:Dependency visibility="public" isSpecification="false" namespace="Use_Case_View" supplier="uRqgXkTCMkvoP" xmi.id="uoQglf5es3IIN" client="u4j0NTUU15ffh" name=""/>
       <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uxFqeTa8itEvZ" name="Converter unidade dos dados"/>
-      <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u2OTTZ560etg2" name="Plotar histograma de fraquencia de raio do poro"/>
+      <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u2OTTZ560etg2" name="Plotar histograma de frequencia de raio do poro"/>
       <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="u25VBQi72Ysgz" name="Calcular area e perimetro total"/>
       <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uwOniolY1t7Zv" name="Calcular superficie especifica"/>
       <UML:UseCase visibility="public" isSpecification="false" namespace="Use_Case_View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="uzgVDNU0AocXK" name="Plotar fracao acumulada do volume poroso"/>
@@ -180,7 +180,7 @@
          </assocwidget>
         </associations>
        </diagram>
-       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="1" showpackage="1" showpubliconly="0" showstereotype="1" name="Diagrama Caso de Uso Geral" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="797" canvaswidth="932.946" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#d3d3d3" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="80,86956521739131" xmi.id="uimTkteQFFpP8" documentation="" showscope="1" snapgrid="0" showatts="1" type="2">
+       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="1" showpackage="1" showpubliconly="0" showstereotype="1" name="Diagrama Caso de Uso Geral" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="830.851" canvaswidth="927.861" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#d3d3d3" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="93,57620873536675" xmi.id="uimTkteQFFpP8" documentation="" showscope="1" snapgrid="0" showatts="1" type="2">
         <widgets>
          <actorwidget width="52" showstereotype="1" x="-1089" usesdiagramusefillcolor="0" y="155" usesdiagramfillcolor="0" isinstance="0" localid="ufUOzL0maFAMu" fillcolor="#00ffff" height="52" linecolor="#ff0000" xmi.id="u4j0NTUU15ffh" autoresize="1" textcolor="#000000" usefillcolor="1" linewidth="0" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
          <actorwidget width="54" showstereotype="1" x="-802" usesdiagramusefillcolor="0" y="115" usesdiagramfillcolor="0" isinstance="0" localid="u63YBTAlVKysD" fillcolor="#ffff00" height="54" linecolor="#ff0000" xmi.id="u0xCBH9vlIH2D" autoresize="1" textcolor="#000000" usefillcolor="1" linewidth="0" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
@@ -205,7 +205,7 @@
          <usecasewidget width="138" showstereotype="1" x="-572" usesdiagramusefillcolor="0" y="82" usesdiagramfillcolor="0" isinstance="0" localid="usyAlzsUOZmKt" fillcolor="#ffff00" height="50" linecolor="#ff0000" xmi.id="uN54ZBA8EoS3U" autoresize="1" textcolor="#000000" usefillcolor="1" linewidth="0" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
          <usecasewidget width="82" showstereotype="1" x="-628" usesdiagramusefillcolor="0" y="182" usesdiagramfillcolor="0" isinstance="0" localid="uMn5Onut9vLo7" fillcolor="#ffff00" height="50" linecolor="#ff0000" xmi.id="uZoT3Omr2e5Ta" autoresize="1" textcolor="#000000" usefillcolor="1" linewidth="0" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
          <usecasewidget width="96" showstereotype="1" x="-550" usesdiagramusefillcolor="0" y="141" usesdiagramfillcolor="0" isinstance="0" localid="uQdyCag2ouk6L" fillcolor="#ffff00" height="50" linecolor="#ff0000" xmi.id="uoBHhdAv349vl" autoresize="1" textcolor="#000000" usefillcolor="1" linewidth="0" font="Sans Serif,9,-1,0,50,0,0,0,0,0"/>
-         <notewidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-1269.95" showstereotype="1" y="-495.86" text="Caso de Uso Geral" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="u13tu2nx551VF" width="153.602" isinstance="0" noteType="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="uTAkZF8YBW70Y" autoresize="0" height="34"/>
+         <notewidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-1264.86" showstereotype="1" y="-596.851" text="Diagrama de Caso de Uso Geral" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="uCnkHdbWGlRqL" width="271.251" isinstance="0" noteType="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="uTSJsW8FBIU3N" autoresize="0" height="42.8886"/>
         </widgets>
         <messages/>
         <associations>
@@ -346,7 +346,7 @@
      </UML:Namespace.ownedElement>
      <XMI.extension xmi.extender="umbrello">
       <diagrams resolution="96">
-       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="0" showpackage="1" showpubliconly="0" showstereotype="1" name="entity relationship diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="20" canvaswidth="74" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#d3d3d3" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="upErrldvWHTL8" documentation="" showscope="1" snapgrid="0" showatts="1" type="9">
+       <diagram showopsig="1" linecolor="#ff0000" snapx="25" showattribassocs="1" snapy="25" linewidth="0" showattsig="1" textcolor="#000000" isopen="1" showpackage="1" showpubliconly="0" showstereotype="1" name="entity relationship diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="20" canvaswidth="74" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#d3d3d3" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="100" xmi.id="upErrldvWHTL8" documentation="" showscope="1" snapgrid="0" showatts="1" type="9">
         <widgets>
          <entitywidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="0" textcolor="#000000" usesdiagramusefillcolor="0" x="-286" showattsigs="0" showstereotype="1" y="-475" font="Sans Serif,9,-1,0,50,0,0,0,0,0" localid="u9jvhwdjLaJ6U" width="74" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="uCQJZAuQbp8HW" autoresize="1" height="20"/>
         </widgets>
@@ -360,7 +360,7 @@
   </UML:Model>
  </XMI.content>
  <XMI.extensions xmi.extender="umbrello">
-  <docsettings viewid="uimTkteQFFpP8" uniqueid="u13tu2nx551VF" documentation=""/>
+  <docsettings viewid="uimTkteQFFpP8" uniqueid="uCnkHdbWGlRqL" documentation=""/>
   <listview>
    <listitem open="1" type="800" id="Views">
     <listitem open="1" type="821" id="Component_View"/>
